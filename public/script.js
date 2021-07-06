@@ -66,8 +66,7 @@ navigator.mediaDevices
 
   socket.on('user-disconnected', userId => {
     if (peers[userId]) peers[userId].close()
-    console.log(peers);
-    console.log("disconnect me peer")
+    
   });
 
 
@@ -79,13 +78,11 @@ function connectToNewUser (userId, stream)  {
   });
   call.on('close', () => {
     video.remove()
-    console.log(peers);
-    console.log("close me peer")
+   
   })
 
   peers[userId] = call
-  console.log(peers);
-  console.log(" me peer")
+
 };
 
 //Assigning peer object a random, unique ID and also the user's name.
