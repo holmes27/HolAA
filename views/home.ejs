@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HolAA</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
+  <script src="https://unpkg.com/peerjs@1.3.1/dist/peerjs.min.js"></script>
+
+</head>
+
+<body class="bg"> 
+  <!-- The class bg is for background svg of home page-->
+
+  <div>
+    <!-- Below svg is an animated cartoon robot waving -->
+    <object type="image/svg+xml" data="Hello (2).svg" class="robot"></object>
+ 
+    <!-- The submit button (Let's HolAA) of form takes you to the video call room  -->
+    <form action="/room">     
+
+      <!-- Entering your name is a required field; this data is sent to variable user in script.js -->
+      <input name="name" class="form-control enterName" autocomplete="off" type="text" placeholder="Enter your name" required>
+      <!-- Entering a room id takes you that room with the code(The room ID) as entered by you -->
+      <input name="rooms" class="form-control roomID" autocomplete="off" type="text" placeholder="Enter Room ID">
+
+
+      <button type="submit" class="HolAA"> Let's HolAA !</button>
+    </form>
+
+  </div>
+  <img src="logohola.svg" class="orglogo">
+   <!-- this is HolAA's logo -->
+</body>
+<script>
+  const form = document.querySelector('form')
+  form.addEventListener('submit', event => {
+    localStorage.setItem('name', event.target.name.value)
+  })
+// After a person clicks at submit button, the name is stored in local storage
+
+</script>
+<script src="script.js"></script>
+
+</html>
