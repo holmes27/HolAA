@@ -176,6 +176,7 @@ top: 57%;
   align-items: center;
   padding: 1rem;
   background-color: var(--room-background);
+  overflow: auto;
 }
 
 video {
