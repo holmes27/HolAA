@@ -8,8 +8,7 @@ This app is build using NodeJS,Express,EJS, Socket.IO, and PeerJS(WebRTC)
 ### For checking out live Demo visit: https://holaa-engage.herokuapp.com/
 
 1. You will see a landing page (as shown below) where you need to enter your `Name` and `Room ID`(if you have an exisiting one or you can create a new custom Room ID or else it will automatically generate a random Room ID using UUID package).
-           
-           <img src = "./HolAA-Home.png" width="65%" height="65%" />
+         <img src = "./HolAA-Home.png" width="65%" height="65%" />
 2. After entering in the room you can invite other participants by clicking on the invite button and send the joining info to the user.
 3.  The other user can enter the link in the `Room ID` and after entering their name, the user would be connected.
 4.  Now you can easily video call and even chat with the users.
