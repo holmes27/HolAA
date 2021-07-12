@@ -26,6 +26,4 @@ This app is build using NodeJS,Express,EJS, Socket.IO, and PeerJS(WebRTC)
 4. You will see `[nodemon] starting 'node server.js'` in the command prompt window, this means you have setup the server successfully in your system.
 5. Now, go to your browser and type `http://127.0.0.1:2722/` in the address bar.
 6. You will see a page where you need to enter your `Name` and `Room ID`(if you have an exisiting one or you can create a new custom Room ID or else it will automatically generate a random Room ID).
-7.You will enter the room now.
-
-
+7. You will enter the room now.
