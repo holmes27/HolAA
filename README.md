@@ -20,7 +20,7 @@ This app is build using NodeJS,Express,EJS, Socket.IO, and PeerJS(WebRTC)
 1. Clone this repository in your local system.
     * Go to the directory where you want to clone this project.
     * Open your command prompt from your directory.
-    * Type in `git clone https://github.com/holmes27/trial.git` (make sure you have git installed).
+    * Type in `git clone https://github.com/holmes27/HolAA.git` (make sure you have git installed).
 2. Open the command prompt from your project directory and run the command `npm install` to install the required node packages.
 3. Now in the same command prompt window run the command `npm start`.
 4. You will see `[nodemon] starting 'node server.js'` in the command prompt window, this means you have setup the server successfully in your system.
